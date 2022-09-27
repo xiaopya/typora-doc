@@ -68,7 +68,7 @@ docker pull nginx
 docker images
 ```
 
-![image-20220927225223720](https://raw.githubusercontent.com/start-point/typora/master/Typoraimage-20220927225223720.png)
+xxxxxxxxxx #复制copy 路径\文件名 路径\文件名#移动move 路径\文件名 路径\文件名PowerShell
 
 
 
@@ -216,6 +216,7 @@ docker ps    # 查看nginx是否启动
 > 这时候在每次写代码都会去执行 关闭容器 pull代码 执行启动命令会很麻烦 在项目的根目录下创建一个 文件名 [start.sh](http://start.sh)
 
 ```PowerShell
+
 # start.sh     启动命令 sh start.sh
 
 git pull
