@@ -7,7 +7,7 @@
 ```JavaScript
 import qs from 'qs';
  
-let obj = {
+let obj = {	
     a: 'aaa',
     b: 'bbb',
     c: 'ccc',
