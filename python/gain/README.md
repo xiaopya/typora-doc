@@ -1,25 +1,14 @@
 
 
-百度文库爬虫  Baidu Wenku Spider
-
-仅支持python3
+百度文库爬虫
 
 ## 郑重声明
 
-请勿将该脚本用于下载付费文档或商业用途，否则后果自负！
-本项目仅为方便查看在线文档和交流爬虫技术。
+仅限制自己使用，商途后果自负
 
 ## 使用教程
 
-目前该项目支持所有格式文档下载。
-
-ppt仅能保存图片格式的pdf，建议下载后通过Acrobot等光学识别软件拷贝文字；
-
-doc、pdf文件仅能保存为pdf，且可能看起来会有一些不同；
-
-xls文件仅能保存为pdf，未来可能会支持保存为xls；
-
-txt可保存为原始格式。
+目前该项目支持所有格式文档下载，仅有一些文件只能保存成pdf 例如：ppt ...
 
 如果需要提取图片或查看原始数据，可以带参数`-t`保存临时文件。
 
@@ -29,10 +18,13 @@ txt可保存为原始格式。
 
 ### 安装
 
+下载源码并安装依赖 
 
-下载源码并安装依赖
+注：该仓库有别的东西，建议clone下来后，直接把里面的 **python/gain** 这个项目单独拿出来 
 
 ```powershell
+git clone https://github.com/start-point/typora-doc.git
+
 pip install -r requirements.txt
 python main.py --help
 ```
@@ -72,5 +64,13 @@ python main.py --help
 
 批量下载。传入文件名，文件中一行一个链接。
 
-例如：
-python main.py -C  I:\python\wks-main\cookies  https://wenku.baidu.com/view/291a3ff982d049649b6648d7c1c708a1284a0ad9.html
+
+
+
+
+**例如：**
+
+```powershell
+python main.py -F  文件名 需要下载的文档链接地址(也就是url)
+```
+
